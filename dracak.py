@@ -68,13 +68,13 @@ class Page:
         print(f"Životy {"♥"*game_state.hp}{"♡"*(MAX_HP - game_state.hp)} | Peníze: {"①"*game_state.coins}")
 
         if game_state.hp <= 0:
-            print("Zemřel jsi! Konec hry.")
+            input("Zemřel jsi! Konec hry.")
             sys.exit()
 
         print(self.text)
 
         if not self.choices:  # Game over is indicated by no more choices available.
-            print("Konec hry.")
+            input("Konec hry.")
             sys.exit()
 
         elif len(self.choices) == 1:  # When there is only thing to do, there is no choice.
@@ -171,4 +171,3 @@ book = {
 if __name__ == "__main__":
     while True:
         book[game_state.current_page].play()
-    input()
