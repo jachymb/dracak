@@ -1,2 +1,2 @@
 # dracak
-Simple text-based RPG demo (Czech storytelling)
+Simple text-based RPG engine with a demo (Czech storytelling)
