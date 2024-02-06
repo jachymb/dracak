@@ -145,7 +145,7 @@ book = {
     "nevestinec:berta": Page("Jak to ale dopadne? S touto ženou jeden nikdy neví...", [
         Choice("", "nevestinec", "S prací krásné slečny jsi tentokrát velmi spokojen.", hp_gain=2),
         Choice("", "nevestinec", "Slečna se snažila, ale bylo vidět, že je již dnes dost unavená a tak to za moc nestálo."),
-        Choice("", "start", "Od Berty jsi chytil nějakou infekci. Potom, co jsi z domu odešel jsi dlouho .", hp_gain=-4),
+        Choice("", "start", "Od Berty jsi chytil nějakou infekci. Potom, co jsi z domu odešel jsi dlouho stonal.", hp_gain=-4),
     ], choice_random=True),
     "nevestinec:cecilie": Page("Cecilie je upovídaná žena. Nabídne ti, že za 3 peníze ti bude vyprávět příběhy ze svého života. Zajímá tě to poslouchat?", [
         Choice("Zaplatím a poslechnu si to.", "nevestinec:cecilie", "Její řeči ti nepřijdou moc zajímavé. Ale když domluví, hezky se na tebe usměje, asi chtěla víc posluchače, než peníze.", completes_task="cecilie", entry_cost=3),
