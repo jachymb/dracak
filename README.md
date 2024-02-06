@@ -1,2 +1,2 @@
 # dracak
-Simple text-based RPG demo (Czech)
+Simple text-based RPG demo (Czech storytelling)
