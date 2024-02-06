@@ -148,8 +148,8 @@ book = {
         Choice("", "start", "Od Berty jsi chytil nějakou infekci. Potom, co jsi z domu odešel jsi dlouho stonal.", hp_gain=-4),
     ], choice_random=True),
     "nevestinec:cecilie": Page("Cecilie je upovídaná žena. Nabídne ti, že za 3 peníze ti bude vyprávět příběhy ze svého života. Zajímá tě to poslouchat?", [
-        Choice("Zaplatím a poslechnu si to.", "nevestinec:cecilie", "Její řeči ti nepřijdou moc zajímavé. Ale když domluví, hezky se na tebe usměje, asi chtěla víc posluchače, než peníze.", completes_task="cecilie", entry_cost=3),
-        Choice("Obdaruji ji náhrdelníkem.", "nevestinec", "Cecilie se zaraduje a vypráví sama dál, prořekne se, že za ní občas chodí alchymista, který svůj prsten schovává v truhle.", required_tasks={"dysko", "cecilie", "nahrdelnik"}, completes_task="truhla", forbidden_tasks={"truhla"}),
+        Choice("Zaplatím a poslechnu si to.", "nevestinec:cecilie", "Její řeči ti nepřijdou moc zajímavé, vykládá o tom, že má ráda šperky a kdesi cosi. Ale když domluví, hezky se na tebe usměje, asi chtěla víc posluchače, než peníze.", completes_task="cecilie", entry_cost=3),
+        Choice("Obdaruji ji náhrdelníkem a vyzvu, ať poví něco o svých hostech.", "nevestinec", "Cecilie se zaraduje a vypráví sama dál, prořekne se, že za ní občas chodí alchymista, který svůj prsten schovává v truhle.", required_tasks={"dysko", "cecilie", "nahrdelnik"}, completes_task="truhla", forbidden_tasks={"truhla"}),
         Choice("Nemám zájem.", "nevestinec", "Opustíš její pokoj.")
     ]),
     "laborator": Page("Alchymista má vystavené různé podivné předměty. Zeptá se, jesli chceš něco koupit?", [
