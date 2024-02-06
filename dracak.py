@@ -171,3 +171,4 @@ book = {
 if __name__ == "__main__":
     while True:
         book[game_state.current_page].play()
+    input()
