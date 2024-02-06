@@ -54,7 +54,7 @@ class Page:
         print(" | ".join(c.format(i) for i, c in enumerate(active_choices)))
         try:
             s = input("Tvoje volba? ")
-            i = ord(s) - ord('a')
+            i = ord(s) - ord(FIRST_CHOICE)
 
             if not 0 <= i < len(active_choices):
                 raise ValueError()
@@ -161,10 +161,10 @@ book = {
     "laborator:mrtvy": Page("Alchymista je mrtvý, ale v jedovatém kouři nemůžeš dlouho zůstat. Stihneš ještě něco udělat?", [
         Choice("Raději vypadnu hned ven.", "start", "Spěšně opustíš laboratoř."),
         Choice("Zkusím v rychlost ukrást co se kde válí.", "start", "Shrábneš nějaké mince pod pultem, ale dlouho nevydržíš.", hp_gain=-1, coins_gain=9),
-        Choice("Vypáčím truhlu", "vyhra", "Chvíli kuckáš v kouři, ale nakonec v truhle najdeš kouzelný prsten.", hp_gain=-1, required_tasks={"truhla"})
+        Choice("Vypáčím truhlu", "vyhra", "Chvíli kuckáš v kouři, až nakonec...", hp_gain=-1, required_tasks={"truhla"})
     ]),
     "hrbitov": Page("Na hřbitově si všimneš nového hrobu: alchymistova. Jeho laboratoř již rozebrali. Uvědomíš si, že k jeho prstenu se již nikdy neodstaneš. Prohrál jsi.", []),
-    "vyhra": Page("Získal jsi kouzelný prsten! Zvítězil jsi!", [])
+    "vyhra": Page("Našel jsi v truhle kouzelný prsten a odnesl ho bezpečně ven! Zvítězil jsi!", [])
 }
 
 
